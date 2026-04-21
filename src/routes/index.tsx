@@ -31,7 +31,7 @@ function Index() {
           <div className="md:col-span-7">
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-background/60 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-              Meisterbetrieb in Hannover
+              Meisterbetrieb in Hannover · Qualität die bleibt
             </span>
             <h1 className="mt-6 text-5xl leading-[1.02] md:text-7xl">
               Fliesen, die <em className="not-italic text-primary">bleiben.</em>
