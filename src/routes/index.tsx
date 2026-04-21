@@ -70,30 +70,33 @@ function Index() {
           <div className="relative md:col-span-5">
             <div className="absolute -inset-4 -z-10 rounded-3xl bg-[var(--gradient-warm)] opacity-20 blur-2xl" />
             <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-[var(--shadow-elegant)]">
-              <div className="grid grid-cols-6 gap-1.5 bg-accent p-6">
-                {[...Array(24)].map((_, i) => {
-                  const variants = [
-                    "bg-secondary",
-                    "bg-muted",
-                    "bg-primary/80",
-                    "bg-secondary",
-                    "bg-background",
-                    "bg-muted",
-                  ];
-                  return (
-                    <div
-                      key={i}
-                      className={`aspect-square rounded-sm ${variants[i % variants.length]} ${i === 7 || i === 14 ? "bg-primary" : ""}`}
-                    />
-                  );
-                })}
-              </div>
-              <div className="border-t border-border bg-card p-6">
+              <div className="border-b border-border bg-secondary/40 p-6">
                 <p className="font-display text-sm uppercase tracking-[0.18em] text-muted-foreground">
-                  Aktuelles Projekt
+                  Referenzen
                 </p>
-                <p className="mt-2 font-display text-xl">Großformat-Feinsteinzeug, Hannover-Mitte</p>
-                <p className="mt-1 text-sm text-muted-foreground">60 × 120 cm · fugenoptimiert</p>
+                <p className="mt-2 font-display text-xl">Was unsere Kunden sagen</p>
+              </div>
+              <div className="divide-y divide-border">
+                {[
+                  { name: "Catharina Avenriep", text: "Top Firma — von der Beratung bis zur Umsetzung super akkurat und schnell." },
+                  { name: "Leander", text: "Pünktlich, freundlich und schöne Arbeit. Detailverliebt. Gerne wieder!" },
+                  { name: "K. Nettler", text: "Termintreu, kompetent, handwerklich perfekt. Sehr empfehlenswert." },
+                ].map((r) => (
+                  <div key={r.name} className="p-5">
+                    <div className="flex items-center gap-2">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-3.5 w-3.5 fill-primary text-primary" />
+                      ))}
+                      <span className="ml-1 text-xs font-medium text-muted-foreground">{r.name}</span>
+                    </div>
+                    <p className="mt-2 text-sm leading-relaxed text-foreground/90">„{r.text}"</p>
+                  </div>
+                ))}
+              </div>
+              <div className="border-t border-border bg-card p-5">
+                <Link to="/referenzen" className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline">
+                  Alle Referenzen ansehen <ArrowRight className="h-4 w-4" />
+                </Link>
               </div>
             </div>
           </div>
