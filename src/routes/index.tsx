@@ -78,7 +78,7 @@ function Index() {
                 alt="Modernes Badezimmer mit großformatigen Wandfliesen, Hannover"
                 width={1280}
                 height={960}
-                className="aspect-[4/3] w-full object-cover"
+                className="aspect-[3/4] w-full object-cover"
               />
               <div className="border-t border-border p-6">
                 <p className="font-display text-xs uppercase tracking-[0.18em] text-muted-foreground">
