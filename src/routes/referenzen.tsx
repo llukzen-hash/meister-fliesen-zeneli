@@ -33,7 +33,7 @@ const projects = [
     title: "Bad mit Anthrazit-Boden",
     location: "Hannover · Sanierung",
     category: "Boden & Wand",
-    description: "Neuverfliesung im Schmalbad: dunkler Feinsteinzeug-Boden in Betonoptik kombiniert mit großformatigen weißen Wandfliesen und präzisen Anschlüssen rund um Wanne und Vorwandinstallation.",
+    description: "Neuverfliesung im Schmalbad: dunkler Feinsteinzeug-Boden in Betonoptik kombiniert mit weißen 30×60 cm Wandfliesen und präzisen Anschlüssen rund um Wanne und Vorwandinstallation.",
     specs: ["Feinsteinzeug Anthrazit", "30×60 cm Wand", "Vorwandinstallation"],
   },
   {
