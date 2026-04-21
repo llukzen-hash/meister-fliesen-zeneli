@@ -9,7 +9,10 @@ export function SiteFooter() {
         <div className="md:col-span-2">
           <div className="flex items-center gap-3">
             <img src={logo} alt="Meister Fliesen Zeneli Logo" className="h-11 w-11 rounded-md object-contain" />
-            <span className="font-display text-lg text-primary">Meister Fliesen Zeneli</span>
+            <div className="flex flex-col leading-tight">
+              <span className="font-display text-lg text-primary">Meister Fliesen Zeneli</span>
+              <span className="font-display text-xs italic text-muted-foreground">Qualität die bleibt.</span>
+            </div>
           </div>
           <p className="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">
             Ihr Fliesenlegermeister in Hannover und Umgebung. Präzise Handwerkskunst,
