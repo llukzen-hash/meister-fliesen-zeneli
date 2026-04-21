@@ -30,7 +30,7 @@ const services = [
   {
     n: "03",
     t: "Reparatur & Sanierung",
-    d: "Defekte Fliesen, alte Fugen oder kleine Schäden? Wir bringen alles unauffällig wieder in Form — auch wenn die Originalfliese nicht mehr verfügbar ist.",
+    d: "Defekte Fliesen, alte Fugen oder kleine Schäden? Wir bringen alles fachgerecht wieder in Form. Bei nicht mehr erhältlichen Fliesen oder veränderten Brennchargen finden wir gemeinsam mit Ihnen die beste passende Lösung.",
     points: ["Einzelne Fliesen tauschen", "Fugen erneuern", "Silikon erneuern", "Wasserschaden-Sanierung"],
   },
   {
