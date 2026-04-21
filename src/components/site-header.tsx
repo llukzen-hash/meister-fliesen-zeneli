@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Phone } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo.jpeg";
 
 const nav = [
   { to: "/", label: "Start" },
@@ -15,12 +16,10 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <Link to="/" className="flex items-center gap-2.5 group">
-          <span className="flex h-10 w-10 items-center justify-center rounded-md bg-[var(--gradient-warm)] font-display text-lg font-semibold text-primary-foreground shadow-[var(--shadow-soft)]">
-            MZ
-          </span>
+        <Link to="/" className="flex items-center gap-3 group">
+          <img src={logo} alt="Meister Fliesen Zeneli Logo" className="h-11 w-11 rounded-md object-contain" />
           <span className="flex flex-col leading-tight">
-            <span className="font-display text-base font-medium tracking-tight">Meister Fliesen Zeneli</span>
+            <span className="font-display text-base font-medium tracking-tight text-primary">Meister Fliesen Zeneli</span>
             <span className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">Fliesenleger · Hannover</span>
           </span>
         </Link>
