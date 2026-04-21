@@ -2,6 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Star, ShieldCheck, Clock, Sparkles, Phone } from "lucide-react";
 import { TilePattern } from "@/components/tile-pattern";
 import { SectionHeading } from "@/components/section-heading";
+import projektBad from "@/assets/projekt-bad.jpg";
+import projektBoden from "@/assets/projekt-boden.jpg";
+import projektKueche from "@/assets/projekt-kueche.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -70,33 +73,19 @@ function Index() {
           <div className="relative md:col-span-5">
             <div className="absolute -inset-4 -z-10 rounded-3xl bg-[var(--gradient-warm)] opacity-20 blur-2xl" />
             <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-[var(--shadow-elegant)]">
-              <div className="border-b border-border bg-secondary/40 p-6">
-                <p className="font-display text-sm uppercase tracking-[0.18em] text-muted-foreground">
-                  Referenzen
+              <img
+                src={projektBad}
+                alt="Modernes Badezimmer mit großformatigen Wandfliesen, Hannover"
+                width={1280}
+                height={960}
+                className="aspect-[4/3] w-full object-cover"
+              />
+              <div className="border-t border-border p-6">
+                <p className="font-display text-xs uppercase tracking-[0.18em] text-muted-foreground">
+                  Referenz · Hannover-List
                 </p>
-                <p className="mt-2 font-display text-xl">Was unsere Kunden sagen</p>
-              </div>
-              <div className="divide-y divide-border">
-                {[
-                  { name: "Catharina Avenriep", text: "Top Firma — von der Beratung bis zur Umsetzung super akkurat und schnell." },
-                  { name: "Leander", text: "Pünktlich, freundlich und schöne Arbeit. Detailverliebt. Gerne wieder!" },
-                  { name: "K. Nettler", text: "Termintreu, kompetent, handwerklich perfekt. Sehr empfehlenswert." },
-                ].map((r) => (
-                  <div key={r.name} className="p-5">
-                    <div className="flex items-center gap-2">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-3.5 w-3.5 fill-primary text-primary" />
-                      ))}
-                      <span className="ml-1 text-xs font-medium text-muted-foreground">{r.name}</span>
-                    </div>
-                    <p className="mt-2 text-sm leading-relaxed text-foreground/90">„{r.text}"</p>
-                  </div>
-                ))}
-              </div>
-              <div className="border-t border-border bg-card p-5">
-                <Link to="/referenzen" className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline">
-                  Alle Referenzen ansehen <ArrowRight className="h-4 w-4" />
-                </Link>
+                <p className="mt-2 font-display text-xl">Komplettsanierung Badezimmer</p>
+                <p className="mt-1 text-sm text-muted-foreground">Großformat 60×120 cm · bodengleiche Dusche</p>
               </div>
             </div>
           </div>
@@ -153,7 +142,50 @@ function Index() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
+      {/* PROJEKTE GALERIE */}
+      <section className="border-y border-border bg-secondary/30">
+        <div className="mx-auto max-w-7xl px-6 py-28">
+          <div className="flex flex-wrap items-end justify-between gap-6">
+            <SectionHeading
+              eyebrow="Referenzen"
+              title={<>Ausgewählte Projekte</>}
+              description="Ein Blick auf einige unserer abgeschlossenen Arbeiten."
+            />
+            <Link to="/referenzen" className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-primary">
+              Alle Projekte ansehen <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+          <div className="mt-14 grid gap-6 md:grid-cols-3">
+            {[
+              { img: projektBad, t: "Komplettsanierung Bad", c: "Hannover-List · Bad & Wand" },
+              { img: projektBoden, t: "Wohnbereich in Steinoptik", c: "Hannover-Mitte · Bodenbelag" },
+              { img: projektKueche, t: "Küchenrückwand Metro", c: "Langenhagen · Wandfliesen" },
+            ].map((p) => (
+              <Link
+                key={p.t}
+                to="/referenzen"
+                className="group overflow-hidden rounded-2xl border border-border bg-card transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-soft)]"
+              >
+                <div className="overflow-hidden">
+                  <img
+                    src={p.img}
+                    alt={p.t}
+                    width={1280}
+                    height={960}
+                    loading="lazy"
+                    className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-5">
+                  <h3 className="text-lg">{p.t}</h3>
+                  <p className="mt-1 text-xs text-muted-foreground">{p.c}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-accent text-accent-foreground">
         <div className="mx-auto max-w-7xl px-6 py-28">
           <SectionHeading
