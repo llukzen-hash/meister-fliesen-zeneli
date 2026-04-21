@@ -1,14 +1,15 @@
 import { Link } from "@tanstack/react-router";
 import { MapPin, Phone, Globe, Clock } from "lucide-react";
+import logo from "@/assets/logo.jpeg";
 
 export function SiteFooter() {
   return (
     <footer className="mt-32 border-t border-border bg-secondary/40">
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
-          <div className="flex items-center gap-2.5">
-            <span className="flex h-10 w-10 items-center justify-center rounded-md bg-[var(--gradient-warm)] font-display text-lg font-semibold text-primary-foreground">MZ</span>
-            <span className="font-display text-lg">Meister Fliesen Zeneli</span>
+          <div className="flex items-center gap-3">
+            <img src={logo} alt="Meister Fliesen Zeneli Logo" className="h-11 w-11 rounded-md object-contain" />
+            <span className="font-display text-lg text-primary">Meister Fliesen Zeneli</span>
           </div>
           <p className="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">
             Ihr Fliesenlegermeister in Hannover und Umgebung. Präzise Handwerkskunst,
