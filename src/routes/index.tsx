@@ -142,7 +142,50 @@ function Index() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
+      {/* PROJEKTE GALERIE */}
+      <section className="border-y border-border bg-secondary/30">
+        <div className="mx-auto max-w-7xl px-6 py-28">
+          <div className="flex flex-wrap items-end justify-between gap-6">
+            <SectionHeading
+              eyebrow="Referenzen"
+              title={<>Ausgewählte Projekte</>}
+              description="Ein Blick auf einige unserer abgeschlossenen Arbeiten."
+            />
+            <Link to="/referenzen" className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-primary">
+              Alle Projekte ansehen <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+          <div className="mt-14 grid gap-6 md:grid-cols-3">
+            {[
+              { img: projektBad, t: "Komplettsanierung Bad", c: "Hannover-List · Bad & Wand" },
+              { img: projektBoden, t: "Wohnbereich in Steinoptik", c: "Hannover-Mitte · Bodenbelag" },
+              { img: projektKueche, t: "Küchenrückwand Metro", c: "Langenhagen · Wandfliesen" },
+            ].map((p) => (
+              <Link
+                key={p.t}
+                to="/referenzen"
+                className="group overflow-hidden rounded-2xl border border-border bg-card transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-soft)]"
+              >
+                <div className="overflow-hidden">
+                  <img
+                    src={p.img}
+                    alt={p.t}
+                    width={1280}
+                    height={960}
+                    loading="lazy"
+                    className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-5">
+                  <h3 className="text-lg">{p.t}</h3>
+                  <p className="mt-1 text-xs text-muted-foreground">{p.c}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-accent text-accent-foreground">
         <div className="mx-auto max-w-7xl px-6 py-28">
           <SectionHeading
