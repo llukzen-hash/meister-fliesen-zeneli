@@ -22,7 +22,7 @@ function KontaktPage() {
           <SectionHeading
             eyebrow="Kontakt"
             title={<>Lassen Sie uns <span className="text-primary">sprechen.</span></>}
-            description="Rufen Sie an, schreiben Sie eine Nachricht – oder kommen Sie auf einen Kaffee vorbei. Wir freuen uns auf Ihr Projekt."
+            description="Rufen Sie an oder schreiben Sie eine Nachricht. Beratung vor Ort auf Ihrer Baustelle möglich. Wir freuen uns auf Ihr Projekt."
           />
         </div>
       </section>
