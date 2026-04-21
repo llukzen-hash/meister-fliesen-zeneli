@@ -2,6 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Star, ShieldCheck, Clock, Sparkles, Phone } from "lucide-react";
 import { TilePattern } from "@/components/tile-pattern";
 import { SectionHeading } from "@/components/section-heading";
+import projektBad from "@/assets/projekt-bad.jpg";
+import projektBoden from "@/assets/projekt-boden.jpg";
+import projektKueche from "@/assets/projekt-kueche.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
