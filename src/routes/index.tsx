@@ -82,10 +82,10 @@ function Index() {
               />
               <div className="border-t border-border p-6">
                 <p className="font-display text-xs uppercase tracking-[0.18em] text-muted-foreground">
-                  Referenz · Hannover-List
+                  Referenz · Hannover
                 </p>
                 <p className="mt-2 font-display text-xl">Komplettsanierung Badezimmer</p>
-                <p className="mt-1 text-sm text-muted-foreground">Großformat 60×120 cm · bodengleiche Dusche</p>
+                <p className="mt-1 text-sm text-muted-foreground">Marmoroptik 60×120 cm · Holzoptik-Boden · Walk-in</p>
               </div>
             </div>
           </div>
@@ -157,9 +157,9 @@ function Index() {
           </div>
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {[
-              { img: projektBad, t: "Komplettsanierung Bad", c: "Hannover-List · Bad & Wand" },
-              { img: projektBoden, t: "Wohnbereich in Steinoptik", c: "Hannover-Mitte · Bodenbelag" },
-              { img: projektKueche, t: "Küchenrückwand Metro", c: "Langenhagen · Wandfliesen" },
+              { img: projektBad, t: "Komplettsanierung Bad", c: "Hannover · Marmoroptik & Holzboden" },
+              { img: projektBoden, t: "Bad mit Anthrazit-Boden", c: "Hannover · Feinsteinzeug & Wandfliesen" },
+              { img: projektKueche, t: "Walk-in-Dusche Betonoptik", c: "Hannover · Großformat" },
             ].map((p) => (
               <Link
                 key={p.t}

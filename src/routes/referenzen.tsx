@@ -4,6 +4,7 @@ import { SectionHeading } from "@/components/section-heading";
 import projektBad from "@/assets/projekt-bad.jpg";
 import projektBoden from "@/assets/projekt-boden.jpg";
 import projektKueche from "@/assets/projekt-kueche.jpg";
+import projektMarmor from "@/assets/projekt-marmor.jpg";
 
 export const Route = createFileRoute("/referenzen")({
   head: () => ({
@@ -22,26 +23,34 @@ const projects = [
   {
     image: projektBad,
     title: "Komplettsanierung Badezimmer",
-    location: "Hannover-List",
+    location: "Hannover · Privatkunde",
     category: "Bad & Wand",
-    description: "Bodengleiche Walk-in-Dusche mit großformatigen Wandfliesen in warmem Sandton. Inklusive Abdichtung, Verlegung und Silikonarbeiten.",
-    specs: ["Großformat 60×120 cm", "Bodengleiche Dusche", "8 m² Wandfläche"],
+    description: "Bodengleiche Walk-in-Dusche mit großformatigen Marmoroptik-Wandfliesen, Holzoptik-Boden und brünierter Armatur. Charaktervoller Mix aus rustikalem Bestand und moderner Verlegung.",
+    specs: ["Marmoroptik 60×120 cm", "Holzoptik-Boden", "Walk-in-Dusche"],
   },
   {
     image: projektBoden,
-    title: "Wohnbereich in Steinoptik",
-    location: "Hannover-Mitte",
-    category: "Bodenbelag",
-    description: "Großformat-Feinsteinzeug in heller Steinoptik. Fugenoptimierte Verlegung über den gesamten offenen Wohnbereich.",
-    specs: ["Feinsteinzeug", "60×120 cm", "ca. 45 m²"],
+    title: "Bad mit Anthrazit-Boden",
+    location: "Hannover · Sanierung",
+    category: "Boden & Wand",
+    description: "Neuverfliesung im Schmalbad: dunkler Feinsteinzeug-Boden in Betonoptik kombiniert mit großformatigen weißen Wandfliesen und präzisen Anschlüssen rund um Wanne und Vorwandinstallation.",
+    specs: ["Feinsteinzeug Anthrazit", "30×60 cm Wand", "Vorwandinstallation"],
   },
   {
     image: projektKueche,
-    title: "Küchenrückwand Metro-Optik",
-    location: "Langenhagen",
-    category: "Wandfliesen",
-    description: "Klassische Metro-Fliesen in soft Blue-Grey als zeitlose Küchenrückwand. Präzise Eckschnitte und saubere Fugenarbeit.",
-    specs: ["Metro 7,5×30 cm", "Versatzverband", "Glanz-Glasur"],
+    title: "Walk-in-Dusche in Betonoptik",
+    location: "Hannover · Altbau",
+    category: "Dusche",
+    description: "Großformatige Wandfliesen in matter Betonoptik treffen auf bestehenden Marmor – fachgerechter Übergang, sauber abgedichtete Duschwanne und präzise Schnitte am historischen Bestand.",
+    specs: ["Großformat 60×120 cm", "Bodengleiche Wanne", "Bestandsanschluss"],
+  },
+  {
+    image: projektMarmor,
+    title: "Hochglanz-Marmoroptik Boden",
+    location: "Hannover · Dachgeschoss",
+    category: "Bodenbelag",
+    description: "Großformatige polierte Feinsteinzeug-Fliesen in dramatischer Marmoroptik. Spiegelnde Oberfläche, präzise Fugen und exakte Anschlüsse an Dachschräge und Fenster.",
+    specs: ["Poliertes Feinsteinzeug", "Marmoroptik", "Dachschräge"],
   },
 ];
 
