@@ -24,8 +24,8 @@ const services = [
   {
     n: "02",
     t: "Bodenbeläge",
-    d: "Naturstein, Feinsteinzeug, Großformat oder XXL-Platten – wir verlegen mit dem richtigen Verfahren für Ihr Material und Ihre Räume.",
-    points: ["Großformat bis 120×280 cm", "Naturstein & Feinsteinzeug", "Außenbereich & Terrasse", "Untergrund-Vorbereitung"],
+    d: "Naturstein, Feinsteinzeug oder Großformat – wir verlegen mit dem richtigen Verfahren für Ihr Material und Ihre Räume.",
+    points: ["Großformat-Fliesen", "Naturstein & Feinsteinzeug", "Außenbereich & Terrasse", "Untergrund-Vorbereitung"],
   },
   {
     n: "03",
