@@ -157,9 +157,9 @@ function Index() {
           </div>
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {[
-              { img: projektBad, t: "Komplettsanierung Bad", c: "Hannover-List · Bad & Wand" },
-              { img: projektBoden, t: "Wohnbereich in Steinoptik", c: "Hannover-Mitte · Bodenbelag" },
-              { img: projektKueche, t: "Küchenrückwand Metro", c: "Langenhagen · Wandfliesen" },
+              { img: projektBad, t: "Komplettsanierung Bad", c: "Hannover · Marmoroptik & Holzboden" },
+              { img: projektBoden, t: "Bad mit Anthrazit-Boden", c: "Hannover · Feinsteinzeug & Wandfliesen" },
+              { img: projektKueche, t: "Walk-in-Dusche Betonoptik", c: "Hannover · Großformat" },
             ].map((p) => (
               <Link
                 key={p.t}
