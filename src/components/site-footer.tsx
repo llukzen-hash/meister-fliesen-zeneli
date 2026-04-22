@@ -38,6 +38,7 @@ export function SiteFooter() {
             <li><Link to="/referenzen" className="hover:text-foreground">Referenzen</Link></li>
             <li><Link to="/kontakt" className="hover:text-foreground">Kontakt</Link></li>
             <li><Link to="/impressum" className="hover:text-foreground">Impressum</Link></li>
+            <li><Link to="/datenschutz" className="hover:text-foreground">Datenschutz</Link></li>
           </ul>
         </div>
       </div>
@@ -46,6 +47,8 @@ export function SiteFooter() {
           <p>© {new Date().getFullYear()} Meister Fliesen Zeneli. Alle Rechte vorbehalten.</p>
           <div className="flex items-center gap-3">
             <Link to="/impressum" className="hover:text-foreground">Impressum</Link>
+            <span>·</span>
+            <Link to="/datenschutz" className="hover:text-foreground">Datenschutz</Link>
             <span>·</span>
             <p>Meisterbetrieb · Hannover</p>
           </div>
