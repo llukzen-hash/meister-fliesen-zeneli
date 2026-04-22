@@ -20,7 +20,7 @@ export function SiteHeader() {
           <img src={logo} alt="Meister Fliesen Zeneli Logo" className="h-11 w-11 rounded-md object-contain" />
           <span className="flex flex-col leading-tight">
             <span className="font-display text-base font-medium tracking-tight text-primary">Meister Fliesen Zeneli</span>
-            <span className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">Fliesenleger · Hannover</span>
+            <span className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">Fliesenlegermeister · Hannover</span>
           </span>
         </Link>
 
