@@ -65,9 +65,12 @@ function UeberUnsPage() {
           </div>
           <div className="space-y-6 text-base leading-relaxed text-muted-foreground">
             <p>
-              Bei uns gibt es keine bösen Überraschungen. Der Kostenvoranschlag, den Sie
-              bekommen, ist der Preis, den Sie zahlen. Der Termin, den wir vereinbaren,
-              ist der Termin, an dem wir vor der Tür stehen.
+              Sie bekommen von uns einen transparenten Kostenvoranschlag auf Basis der
+              vereinbarten Leistungen. Sollten sich während der Arbeit unvorhergesehene
+              Aufwände ergeben – etwa durch versteckte Schäden im Untergrund – besprechen
+              wir diese offen mit Ihnen, bevor wir weitermachen. So wissen Sie jederzeit,
+              woran Sie sind. Und der Termin, den wir vereinbaren, ist der Termin, an dem
+              wir vor der Tür stehen.
             </p>
             <p>
               Und sollte uns während der Arbeit etwas auffallen, das anders besser wäre,
