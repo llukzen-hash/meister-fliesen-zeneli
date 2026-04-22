@@ -216,22 +216,35 @@ function Index() {
 
       {/* CTA */}
       <section className="mx-auto max-w-7xl px-6 py-28">
-        <div className="relative overflow-hidden rounded-3xl border border-border bg-[var(--gradient-warm)] p-12 md:p-20">
-          <div className="absolute inset-0 -z-0 text-white/10">
+        <div className="relative overflow-hidden rounded-3xl border border-primary/20 bg-primary p-12 shadow-[var(--shadow-elegant)] md:p-20">
+          <div className="absolute inset-0 -z-0 bg-[var(--gradient-warm)] opacity-90" />
+          <div className="absolute inset-0 -z-0 text-white/15">
             <TilePattern className="h-full w-full" />
           </div>
-          <div className="relative max-w-2xl text-primary-foreground">
-            <h2 className="text-4xl md:text-5xl">Bereit für Ihr Projekt?</h2>
-            <p className="mt-5 text-lg text-primary-foreground/90">
-              Wir kommen vorbei, schauen es uns an und machen Ihnen ein faires Angebot.
-              Unverbindlich und kostenlos.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Link to="/kontakt" className="inline-flex items-center gap-2 rounded-md bg-background px-6 py-3.5 text-sm font-medium text-foreground hover:bg-background/90">
-                Termin vereinbaren <ArrowRight className="h-4 w-4" />
+          <div className="absolute -right-24 -top-24 -z-0 h-72 w-72 rounded-full bg-primary-foreground/10 blur-3xl" />
+          <div className="absolute -bottom-32 -left-20 -z-0 h-80 w-80 rounded-full bg-accent/30 blur-3xl" />
+
+          <div className="relative grid gap-10 md:grid-cols-12 md:items-end">
+            <div className="md:col-span-8">
+              <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-primary-foreground backdrop-blur">
+                <span className="h-1.5 w-1.5 rounded-full bg-primary-foreground" />
+                Kostenlos & unverbindlich
+              </span>
+              <h2 className="mt-6 text-4xl text-primary-foreground md:text-6xl">
+                Bereit für Ihr Projekt?
+              </h2>
+              <p className="mt-5 max-w-xl text-lg leading-relaxed text-primary-foreground/85">
+                Wir kommen vorbei, schauen es uns an und machen Ihnen ein faires Angebot.
+                Unverbindlich und kostenlos.
+              </p>
+            </div>
+            <div className="flex flex-col gap-3 md:col-span-4 md:items-end">
+              <Link to="/kontakt" className="group inline-flex w-full items-center justify-center gap-2 rounded-md bg-background px-6 py-4 text-sm font-medium text-foreground shadow-[var(--shadow-soft)] transition-transform hover:-translate-y-0.5 md:w-auto">
+                Termin vereinbaren
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
-              <a href="tel:+4915563570648" className="inline-flex items-center gap-2 rounded-md border border-white/30 px-6 py-3.5 text-sm font-medium text-primary-foreground hover:bg-white/10">
-                <Phone className="h-4 w-4" /> Direkt anrufen
+              <a href="tel:+4915563570648" className="inline-flex w-full items-center justify-center gap-2 rounded-md border border-white/40 px-6 py-4 text-sm font-medium text-primary-foreground hover:bg-white/10 md:w-auto">
+                <Phone className="h-4 w-4" /> 0155 63570648
               </a>
             </div>
           </div>
