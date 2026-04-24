@@ -90,7 +90,7 @@ function ReferenzenPage() {
             </div>
             <div>
               <p className="font-display text-2xl leading-none">5,0</p>
-              <p className="text-xs text-muted-foreground">aus 6 Google-Bewertungen</p>
+              <p className="text-xs text-muted-foreground">aus 7 Google-Bewertungen</p>
             </div>
           </div>
         </div>
