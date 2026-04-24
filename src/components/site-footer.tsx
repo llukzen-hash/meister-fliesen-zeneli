@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { MapPin, Phone, Globe, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 export function SiteFooter() {
@@ -25,7 +25,7 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
             <li className="flex gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> Spannhagengarten 12b<br/>30655 Hannover</li>
             <li className="flex gap-2"><Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> <a href="tel:+4915563570648" className="hover:text-foreground">0155 63570648</a></li>
-            <li className="flex gap-2"><Globe className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> meisterfliesenzeneli.de</li>
+            <li className="flex gap-2"><Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> <a href="mailto:info@meisterfliesenzeneli.de" className="hover:text-foreground">info@meisterfliesenzeneli.de</a></li>
             <li className="flex gap-2"><Clock className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> Mo–Fr · bis 18:00 Uhr</li>
           </ul>
         </div>
