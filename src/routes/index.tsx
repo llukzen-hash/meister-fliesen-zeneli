@@ -61,7 +61,7 @@ function Index() {
                 ))}
               </div>
               <p className="text-sm text-muted-foreground">
-                <span className="font-medium text-foreground">5,0</span> · 6 Bewertungen auf Google
+                <span className="font-medium text-foreground">5,0</span> · 7 Bewertungen auf Google
               </p>
             </div>
           </div>
