@@ -22,11 +22,7 @@ function Index() {
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 -z-10 text-accent/30">
-          <TilePattern className="h-full w-full" />
-        </div>
-        <div className="absolute inset-0 -z-10 bg-[var(--gradient-subtle)]" />
+      <section className="relative overflow-hidden border-b border-border bg-secondary/30">
         <div className="mx-auto grid max-w-7xl gap-16 px-6 py-24 md:grid-cols-12 md:py-32">
           <div className="md:col-span-7">
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-background/60 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur">
