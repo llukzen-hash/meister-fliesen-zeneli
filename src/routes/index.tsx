@@ -61,7 +61,7 @@ function Index() {
                 ))}
               </div>
               <p className="text-sm text-muted-foreground">
-                <span className="font-medium text-foreground">5,0</span> · 6 Bewertungen auf Google
+                <span className="font-medium text-foreground">5,0</span> · 7 Bewertungen auf Google
               </p>
             </div>
           </div>
@@ -186,7 +186,7 @@ function Index() {
         <div className="mx-auto max-w-7xl px-6 py-28">
           <SectionHeading
             eyebrow="Stimmen unserer Kunden"
-            title={<span className="text-accent-foreground">5,0 von 5 Sternen.<br/>Sechsmal in Folge.</span>}
+            title={<span className="text-accent-foreground">Empfohlen von allen,<br/>die uns beauftragt haben.</span>}
           />
           <div className="mt-16 grid gap-6 md:grid-cols-3">
             {[
