@@ -10,7 +10,6 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as UeberUnsRouteImport } from './routes/ueber-uns'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ReferenzenRouteImport } from './routes/referenzen'
 import { Route as LeistungenRouteImport } from './routes/leistungen'
 import { Route as KontaktRouteImport } from './routes/kontakt'
@@ -21,11 +20,6 @@ import { Route as IndexRouteImport } from './routes/index'
 const UeberUnsRoute = UeberUnsRouteImport.update({
   id: '/ueber-uns',
   path: '/ueber-uns',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ReferenzenRoute = ReferenzenRouteImport.update({
@@ -66,7 +60,6 @@ export interface FileRoutesByFullPath {
   '/kontakt': typeof KontaktRoute
   '/leistungen': typeof LeistungenRoute
   '/referenzen': typeof ReferenzenRoute
-  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/ueber-uns': typeof UeberUnsRoute
 }
 export interface FileRoutesByTo {
@@ -76,7 +69,6 @@ export interface FileRoutesByTo {
   '/kontakt': typeof KontaktRoute
   '/leistungen': typeof LeistungenRoute
   '/referenzen': typeof ReferenzenRoute
-  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/ueber-uns': typeof UeberUnsRoute
 }
 export interface FileRoutesById {
@@ -87,7 +79,6 @@ export interface FileRoutesById {
   '/kontakt': typeof KontaktRoute
   '/leistungen': typeof LeistungenRoute
   '/referenzen': typeof ReferenzenRoute
-  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/ueber-uns': typeof UeberUnsRoute
 }
 export interface FileRouteTypes {
@@ -99,7 +90,6 @@ export interface FileRouteTypes {
     | '/kontakt'
     | '/leistungen'
     | '/referenzen'
-    | '/sitemap.xml'
     | '/ueber-uns'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -109,7 +99,6 @@ export interface FileRouteTypes {
     | '/kontakt'
     | '/leistungen'
     | '/referenzen'
-    | '/sitemap.xml'
     | '/ueber-uns'
   id:
     | '__root__'
@@ -119,7 +108,6 @@ export interface FileRouteTypes {
     | '/kontakt'
     | '/leistungen'
     | '/referenzen'
-    | '/sitemap.xml'
     | '/ueber-uns'
   fileRoutesById: FileRoutesById
 }
@@ -130,7 +118,6 @@ export interface RootRouteChildren {
   KontaktRoute: typeof KontaktRoute
   LeistungenRoute: typeof LeistungenRoute
   ReferenzenRoute: typeof ReferenzenRoute
-  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   UeberUnsRoute: typeof UeberUnsRoute
 }
 
@@ -141,13 +128,6 @@ declare module '@tanstack/react-router' {
       path: '/ueber-uns'
       fullPath: '/ueber-uns'
       preLoaderRoute: typeof UeberUnsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sitemap.xml': {
-      id: '/sitemap.xml'
-      path: '/sitemap.xml'
-      fullPath: '/sitemap.xml'
-      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/referenzen': {
@@ -202,7 +182,6 @@ const rootRouteChildren: RootRouteChildren = {
   KontaktRoute: KontaktRoute,
   LeistungenRoute: LeistungenRoute,
   ReferenzenRoute: ReferenzenRoute,
-  SitemapDotxmlRoute: SitemapDotxmlRoute,
   UeberUnsRoute: UeberUnsRoute,
 }
 export const routeTree = rootRouteImport
