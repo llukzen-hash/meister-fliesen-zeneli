@@ -78,8 +78,8 @@ function LeistungenPage() {
 
         <div className="mt-20 flex flex-col items-start gap-4 rounded-2xl border border-border bg-secondary/40 p-10 md:flex-row md:items-center md:justify-between">
           <div>
-            <h3 className="text-2xl">Ihr Projekt nicht dabei?</h3>
-            <p className="mt-2 text-muted-foreground">Sprechen Sie uns an – wir finden eine Lösung.</p>
+            <h3 className="text-2xl">Sie haben besondere Wünsche?</h3>
+            <p className="mt-2 text-muted-foreground">Erzählen Sie uns von Ihrem Vorhaben – wir beraten Sie persönlich und finden die passende Lösung.</p>
           </div>
           <Link to="/kontakt" className="inline-flex items-center gap-2 rounded-md bg-foreground px-6 py-3 text-sm font-medium text-background hover:opacity-90">
             Anfrage starten <ArrowRight className="h-4 w-4" />
