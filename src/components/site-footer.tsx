@@ -26,7 +26,7 @@ export function SiteFooter() {
             <li className="flex gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> Spannhagengarten 12b<br/>30655 Hannover</li>
             <li className="flex gap-2"><Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> <a href="tel:+4915563570648" className="hover:text-foreground">0155 63570648</a></li>
             <li className="flex gap-2"><Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> <a href="mailto:info@meisterfliesenzeneli.de" className="hover:text-foreground">info@meisterfliesenzeneli.de</a></li>
-            <li className="flex gap-2"><Clock className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> Mo–Fr · bis 18:00 Uhr</li>
+            <li className="flex gap-2"><Clock className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> Mo–Fr · bis 16:00 Uhr</li>
           </ul>
         </div>
 

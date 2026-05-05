@@ -33,7 +33,7 @@ function KontaktPage() {
             { i: Phone, label: "Telefon", value: "0155 63570648", href: "tel:+4915563570648" },
             { i: Mail, label: "E-Mail", value: "info@meisterfliesenzeneli.de", href: "mailto:info@meisterfliesenzeneli.de" },
             { i: MapPin, label: "Adresse", value: "Spannhagengarten 12b\n30655 Hannover" },
-            { i: Clock, label: "Öffnungszeiten", value: "Mo – Fr · bis 18:00 Uhr" },
+            { i: Clock, label: "Öffnungszeiten", value: "Mo – Fr · bis 16:00 Uhr" },
             { i: Globe, label: "Plus Code", value: "CQ2H+6Q Hannover" },
           ].map((c) => (
             <a
