@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "sdk_version": "0.26.2",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "meister-fliesen-zeneli",
+      "version": "0.1.0",
+      "title": "Meister Fliesen Zeneli"
+    },
+    "tools": [
+      {
+        "name": "get_company_info",
+        "title": "Betriebsinformationen",
+        "description": "Öffentliche Informationen zum Fliesenleger-Meisterbetrieb Meister Fliesen Zeneli: Inhaber, Anschrift, Telefon, E-Mail, Öffnungszeiten, Einsatzgebiet und Bewertungen.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_services",
+        "title": "Leistungen auflisten",
+        "description": "Listet die angebotenen Fliesenleger-Leistungen (Bad- & Wandfliesen, Bodenbeläge, Reparatur & Sanierung, Beratung & Planung) mit Beschreibung und Leistungspunkten.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "query": {
+              "description": "Optionaler Suchbegriff, filtert Leistungen nach Titel, Beschreibung oder Punkten.",
+              "type": "string"
+            }
+          }
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_projects",
+        "title": "Referenzprojekte auflisten",
+        "description": "Listet abgeschlossene Referenzprojekte (Bad, Boden, Dusche, Wand) mit Titel, Ort, Kategorie, Beschreibung und technischen Angaben.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "category": {
+              "description": "Optionaler Filter auf die Projektkategorie, z. B. 'Bad', 'Dusche', 'Bodenbelag'.",
+              "type": "string"
+            }
+          }
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_contact",
+        "title": "Kontaktmöglichkeiten",
+        "description": "Gibt die Kontaktwege für eine Anfrage zurück: Telefon, E-Mail, Adresse, Öffnungszeiten und Hinweis zur Vor-Ort-Beratung.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
