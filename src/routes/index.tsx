@@ -101,7 +101,7 @@ function Index() {
                 <f.icon className="h-5 w-5" />
               </div>
               <div>
-                <h3 className="text-lg">{f.title}</h3>
+                <h2 className="text-lg">{f.title}</h2>
                 <p className="mt-1 text-sm text-muted-foreground">{f.text}</p>
               </div>
             </div>
