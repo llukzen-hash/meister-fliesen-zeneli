@@ -19,6 +19,7 @@ function ImpressumPage() {
       <section className="border-b border-border bg-[var(--gradient-subtle)]">
         <div className="mx-auto max-w-4xl px-6 py-24 md:py-28">
           <SectionHeading
+            level="h1"
             eyebrow="Rechtliches"
             title={<>Impressum</>}
             description="Angaben gemäß § 5 TMG."

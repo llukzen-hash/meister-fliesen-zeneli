@@ -13,6 +13,44 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Meisterbetrieb für Fliesenarbeiten in Hannover. Bäder, Böden, Sanierung. 5,0★ auf Google." },
       { property: "og:title", content: "Meister Fliesen Zeneli – Fliesenleger Hannover" },
       { property: "og:description", content: "Meisterbetrieb für Fliesenarbeiten in Hannover. Bäder, Böden, Sanierung. 5,0★ auf Google." },
+      { property: "og:url", content: "https://meister-fliesen-zeneli.lovable.app/" },
+    ],
+    links: [{ rel: "canonical", href: "https://meister-fliesen-zeneli.lovable.app/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "Meister Fliesen Zeneli",
+          description:
+            "Fliesenlegermeister in Hannover: Badsanierung, Bodenbeläge, Reparatur & Beratung.",
+          url: "https://meister-fliesen-zeneli.lovable.app/",
+          telephone: "+49 155 63570648",
+          email: "info@meisterfliesenzeneli.de",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Spannhagengarten 12b",
+            postalCode: "30655",
+            addressLocality: "Hannover",
+            addressCountry: "DE",
+          },
+          areaServed: ["Hannover", "Celle"],
+          openingHoursSpecification: [
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              opens: "07:00",
+              closes: "16:00",
+            },
+          ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "5.0",
+            reviewCount: "10",
+          },
+        }),
+      },
     ],
   }),
   component: Index,
@@ -101,7 +139,7 @@ function Index() {
                 <f.icon className="h-5 w-5" />
               </div>
               <div>
-                <h3 className="text-lg">{f.title}</h3>
+                <h2 className="text-lg">{f.title}</h2>
                 <p className="mt-1 text-sm text-muted-foreground">{f.text}</p>
               </div>
             </div>

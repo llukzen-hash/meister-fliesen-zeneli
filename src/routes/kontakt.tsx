@@ -20,6 +20,7 @@ function KontaktPage() {
       <section className="border-b border-border bg-[var(--gradient-subtle)]">
         <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
           <SectionHeading
+            level="h1"
             eyebrow="Kontakt"
             title={<>Lassen Sie uns <span className="text-primary">sprechen.</span></>}
             description="Rufen Sie an oder schreiben Sie eine Nachricht. Beratung vor Ort auf Ihrer Baustelle möglich. Wir freuen uns auf Ihr Projekt."
@@ -64,7 +65,7 @@ function KontaktPage() {
             window.location.href = `mailto:info@meisterfliesenzeneli.de?subject=${subject}&body=${body}`;
           }}
         >
-          <h3 className="text-2xl">Anfrage senden</h3>
+          <h2 className="text-2xl">Anfrage senden</h2>
           <p className="text-sm text-muted-foreground">Wir melden uns in der Regel innerhalb eines Werktags zurück.</p>
 
           <div className="grid gap-5 md:grid-cols-2">
@@ -73,8 +74,9 @@ function KontaktPage() {
           </div>
           <Field name="email" label="E-Mail" type="email" required />
           <div>
-            <label className="mb-2 block text-sm font-medium">Ihre Nachricht</label>
+            <label htmlFor="kontakt-message" className="mb-2 block text-sm font-medium">Ihre Nachricht</label>
             <textarea
+              id="kontakt-message"
               name="message"
               required
               rows={5}
@@ -97,10 +99,11 @@ function KontaktPage() {
 function Field({ name, label, type = "text", required }: { name: string; label: string; type?: string; required?: boolean }) {
   return (
     <div>
-      <label className="mb-2 block text-sm font-medium">
+      <label htmlFor={`kontakt-${name}`} className="mb-2 block text-sm font-medium">
         {label} {required && <span className="text-primary">*</span>}
       </label>
       <input
+        id={`kontakt-${name}`}
         name={name}
         type={type}
         required={required}
