@@ -21,6 +21,7 @@ function UeberUnsPage() {
         <div className="mx-auto grid max-w-7xl gap-16 px-6 py-24 md:grid-cols-12 md:py-32">
           <div className="md:col-span-7">
             <SectionHeading
+            level="h1"
               eyebrow="Über uns"
               title={<>Handwerk ist <span className="text-primary">Vertrauenssache.</span></>}
               description="Meister Fliesen Zeneli ist ein inhabergeführter Meisterbetrieb in Hannover. Wir arbeiten sauber, halten Termine ein und sprechen offen mit unseren Kundinnen und Kunden – auch dann, wenn etwas nicht nach Plan läuft."

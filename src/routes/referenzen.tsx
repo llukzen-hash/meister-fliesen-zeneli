@@ -78,6 +78,7 @@ function ReferenzenPage() {
       <section className="border-b border-border bg-[var(--gradient-subtle)]">
         <div className="mx-auto max-w-7xl px-6 py-24 md:py-28">
           <SectionHeading
+            level="h1"
             eyebrow="Referenzen"
             title={<>Abgeschlossene Projekte. <span className="text-primary">Sauber umgesetzt.</span></>}
             description="Eine Auswahl unserer Arbeiten aus Hannover und Umgebung – von der Badsanierung bis zum großformatigen Bodenbelag."

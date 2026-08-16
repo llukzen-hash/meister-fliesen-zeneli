@@ -47,6 +47,7 @@ function LeistungenPage() {
       <section className="border-b border-border bg-[var(--gradient-subtle)]">
         <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
           <SectionHeading
+            level="h1"
             eyebrow="Leistungen"
             title={<>Was wir für Sie <span className="text-primary">verlegen.</span></>}
             description="Vier Kernbereiche, in denen wir Tag für Tag liefern – mit dem Anspruch eines Meisterbetriebs."

@@ -20,6 +20,7 @@ function KontaktPage() {
       <section className="border-b border-border bg-[var(--gradient-subtle)]">
         <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
           <SectionHeading
+            level="h1"
             eyebrow="Kontakt"
             title={<>Lassen Sie uns <span className="text-primary">sprechen.</span></>}
             description="Rufen Sie an oder schreiben Sie eine Nachricht. Beratung vor Ort auf Ihrer Baustelle möglich. Wir freuen uns auf Ihr Projekt."
