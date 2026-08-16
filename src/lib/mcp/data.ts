@@ -12,7 +12,7 @@ export const company = {
   plusCode: "CQ2H+6Q Hannover",
   chamber: "Handwerkskammer Hannover",
   vatId: "DE454117881",
-  googleReviews: { count: 7, rating: 5.0 },
+  googleReviews: { count: 10, rating: 5.0 },
 };
 
 export const services = [
