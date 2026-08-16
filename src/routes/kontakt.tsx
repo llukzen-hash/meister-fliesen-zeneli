@@ -65,7 +65,7 @@ function KontaktPage() {
             window.location.href = `mailto:info@meisterfliesenzeneli.de?subject=${subject}&body=${body}`;
           }}
         >
-          <h3 className="text-2xl">Anfrage senden</h3>
+          <h2 className="text-2xl">Anfrage senden</h2>
           <p className="text-sm text-muted-foreground">Wir melden uns in der Regel innerhalb eines Werktags zurück.</p>
 
           <div className="grid gap-5 md:grid-cols-2">

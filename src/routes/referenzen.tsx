@@ -154,7 +154,7 @@ function ReferenzenPage() {
       {/* CTA */}
       <section className="mx-auto max-w-5xl px-6 py-24">
         <div className="rounded-3xl border border-border bg-secondary/40 p-10 text-center md:p-14">
-          <h3 className="text-3xl md:text-4xl">Werden Sie unsere nächste Referenz.</h3>
+          <h2 className="text-3xl md:text-4xl">Werden Sie unsere nächste Referenz.</h2>
           <p className="mt-3 text-muted-foreground">Lassen Sie uns gemeinsam Ihr Projekt umsetzen.</p>
           <Link to="/kontakt" className="mt-8 inline-flex items-center gap-2 rounded-md bg-foreground px-6 py-3.5 text-sm font-medium text-background hover:opacity-90">
             Projekt anfragen <ArrowRight className="h-4 w-4" />

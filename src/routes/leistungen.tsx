@@ -64,7 +64,7 @@ function LeistungenPage() {
                 <span className="h-px flex-1 mx-4 bg-border" />
                 <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Leistung</span>
               </div>
-              <h3 className="mt-6 text-3xl md:text-4xl">{s.t}</h3>
+              <h2 className="mt-6 text-3xl md:text-4xl">{s.t}</h2>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">{s.d}</p>
               <ul className="mt-8 grid gap-3 sm:grid-cols-2">
                 {s.points.map((p) => (
@@ -79,7 +79,7 @@ function LeistungenPage() {
 
         <div className="mt-20 flex flex-col items-start gap-4 rounded-2xl border border-border bg-secondary/40 p-10 md:flex-row md:items-center md:justify-between">
           <div>
-            <h3 className="text-2xl">Sie haben besondere Wünsche?</h3>
+            <h2 className="text-2xl">Sie haben besondere Wünsche?</h2>
             <p className="mt-2 text-muted-foreground">Erzählen Sie uns von Ihrem Vorhaben – wir beraten Sie persönlich und finden die passende Lösung.</p>
           </div>
           <Link to="/kontakt" className="inline-flex items-center gap-2 rounded-md bg-foreground px-6 py-3 text-sm font-medium text-background hover:opacity-90">

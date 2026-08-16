@@ -53,7 +53,7 @@ function UeberUnsPage() {
               <div className="flex h-12 w-12 items-center justify-center rounded-md bg-secondary text-primary">
                 <v.i className="h-6 w-6" />
               </div>
-              <h3 className="mt-6 text-xl">{v.t}</h3>
+              <h2 className="mt-6 text-xl">{v.t}</h2>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{v.d}</p>
             </div>
           ))}
