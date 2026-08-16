@@ -74,8 +74,9 @@ function KontaktPage() {
           </div>
           <Field name="email" label="E-Mail" type="email" required />
           <div>
-            <label className="mb-2 block text-sm font-medium">Ihre Nachricht</label>
+            <label htmlFor="kontakt-message" className="mb-2 block text-sm font-medium">Ihre Nachricht</label>
             <textarea
+              id="kontakt-message"
               name="message"
               required
               rows={5}
@@ -98,10 +99,11 @@ function KontaktPage() {
 function Field({ name, label, type = "text", required }: { name: string; label: string; type?: string; required?: boolean }) {
   return (
     <div>
-      <label className="mb-2 block text-sm font-medium">
+      <label htmlFor={`kontakt-${name}`} className="mb-2 block text-sm font-medium">
         {label} {required && <span className="text-primary">*</span>}
       </label>
       <input
+        id={`kontakt-${name}`}
         name={name}
         type={type}
         required={required}

@@ -28,7 +28,6 @@ export const Route = createFileRoute("/")({
           url: "https://meister-fliesen-zeneli.lovable.app/",
           telephone: "+49 155 63570648",
           email: "info@meisterfliesenzeneli.de",
-          image: "https://meister-fliesen-zeneli.lovable.app/",
           address: {
             "@type": "PostalAddress",
             streetAddress: "Spannhagengarten 12b",
